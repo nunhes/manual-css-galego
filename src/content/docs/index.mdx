@@ -1,40 +1,84 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: CSS Moderno
+description: Manual de CSS en galego
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Manual de referencia de CSS, desde os fundamentos básicos ata as técnicas avanzadas que debes coñecer.
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/Brick_Magenta.png
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: CSS Moderno
+      link: /gl/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+      variant: secondary
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
+// import "./styles/global.css";
 
-## Next steps
+<CardGrid>
+  <LinkCard
+    title="Que é este manual e como usalo..."
+    href="/gl/00-introducion/00-que-e-este-manual"
+    description= "Presentación e indicacións de como usar este manual."
+  />
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+<LinkCard
+  title="Que é CSS?"
+  href="/gl/01-fundamentos/01-que-e-css"
+  description="Que é CSS, por que existe e como se conecta con HTML."
+/>
+
+<LinkCard
+  title="Maquetación clásica"
+  href="/gl/02-maquetacion-clasica/01-display-fluxo-posicionamento"
+  description="Como se organiza o contido HTML e como actuar sobre el."
+/>
+
+<LinkCard
+  title="Maquetación moderna"
+  href="/gl/03-maquetacion-moderna/01-flexbox"
+  description="Os novos poderes de CSS para organizar contido HTML."
+/>
+
+<LinkCard
+  title="Adaptabilidade"
+  href="/gl/04-adaptabilidade/01-media-queries"
+  description="Como adaptarse a distintos dispositivos e tamaños de pantalla."
+/>
+
+    <LinkCard
+      title="CSS moderno"
+      href="/gl/05-css-moderno/01-propiedades-personalizadas"
+      description="Como facer que CSS se adapte aos teus intereses."
+    />
+
+    <LinkCard
+
+title="CSS avanzado"
+href="/gl/06-avanzado/01-transicions-animacions"
+description="Técnicas avanzadas: animación, filtros, accesibilidade,... "
+/>
+
+    <LinkCard
+      title="Anexos"
+      href="/gl/07-anexos/01-glosario-css"
+      description="Outros temas de interese relacionados co uso de CSS."
+    />
+
 </CardGrid>
+
+---
+
+<small>
+  *Este é un manual de referencia de **CSS** escrito en **galego**. Non é un
+  curso con sesións, senón un documento ao que volver para consultar, estudar ou
+  resolver dúbidas concretas. Cobre CSS desde o máis elemental ata técnicas
+  avanzadas, cun enfoque que combina explicación humana e uso práctico.*
+</small>
+
+---
+
+<footer>
+  CODE<sup>&reg;</sup>SENSEI by @nunhes &copy; 2026
+</footer>

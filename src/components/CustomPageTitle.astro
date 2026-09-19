@@ -1,0 +1,34 @@
+---
+// src/components/CustomPageTitle.astro
+import getReadingTime from "reading-time";
+import Default from "@astrojs/starlight/components/PageTitle.astro";
+import type { StarlightRouteData } from "@astrojs/starlight/route-data";
+
+const { entry } = (Astro.locals as { starlightRoute: StarlightRouteData }).starlightRoute;
+const minutesRead = getReadingTime(entry.body ?? "").text;
+---
+
+<div class="page-header-container">
+  <Default />
+
+  {
+    minutesRead && (
+      <span class="reading-time">
+        ⏱️ {minutesRead.replace("read", "de lectura")}
+      </span>
+    )
+  }
+</div>
+
+<style>
+  .page-header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .reading-time {
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-3);
+    margin-top: -0.25rem;
+  }
+</style>

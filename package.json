@@ -5,16 +5,30 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "stop": "astro dev stop",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate-pdf": "node generate-pdf.cjs",
+    "prepare": "husky"
   },
   "dependencies": {
+    "@astrojs/markdown-remark": "^7.3.1",
     "@astrojs/starlight": "^0.42.2",
     "astro": "^7.2.10",
     "sharp": "^0.35.3"
   },
   "allowScripts": {
-    "esbuild": true
+    "esbuild": true,
+    "puppeteer@25.11.0": true
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "markdown-link-check": "^3.15.0",
+    "mdast-util-to-string": "^4.0.0",
+    "puppeteer": "^25.11.0",
+    "reading-time": "^1.5.0",
+    "stylelint": "^17.15.0",
+    "stylelint-config-standard": "^40.0.0"
   }
 }

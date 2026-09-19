@@ -19,3 +19,15 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+
+# outros
+.linkcheckrc.json
+.stylelintrc.json
+check-links.cjs
+check-utf8.cjs
+CLAUDE.md
+convert-metadata.cjs
+convert-metadata.js
+generate-pdf.cjs
+lint-css-examples.cjs
