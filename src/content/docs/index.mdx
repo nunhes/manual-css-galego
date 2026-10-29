@@ -8,7 +8,7 @@ hero:
     file: ../../assets/Brick_Magenta.png
   actions:
     - text: CSS Moderno
-      link: /gl/
+      link: /manual-css-galego/gl/
       icon: right-arrow
       variant: secondary
 ---
@@ -19,50 +19,50 @@ import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 <CardGrid>
   <LinkCard
     title="Que é este manual e como usalo..."
-    href="/gl/00-introducion/00-que-e-este-manual"
+    href={`${import.meta.env.BASE_URL}/gl/00-introducion/00-que-e-este-manual`}
     description= "Presentación e indicacións de como usar este manual."
   />
 
 <LinkCard
   title="Que é CSS?"
-  href="/gl/01-fundamentos/01-que-e-css"
+  href={`${import.meta.env.BASE_URL}/gl/01-fundamentos/01-que-e-css`}
   description="Que é CSS, por que existe e como se conecta con HTML."
 />
 
 <LinkCard
   title="Maquetación clásica"
-  href="/gl/02-maquetacion-clasica/01-display-fluxo-posicionamento"
+  href={`${import.meta.env.BASE_URL}/gl/02-maquetacion-clasica/01-display-fluxo-posicionamento`}
   description="Como se organiza o contido HTML e como actuar sobre el."
 />
 
 <LinkCard
   title="Maquetación moderna"
-  href="/gl/03-maquetacion-moderna/01-flexbox"
+  href={`${import.meta.env.BASE_URL}/gl/03-maquetacion-moderna/01-flexbox`}
   description="Os novos poderes de CSS para organizar contido HTML."
 />
 
 <LinkCard
   title="Adaptabilidade"
-  href="/gl/04-adaptabilidade/01-media-queries"
+  href={`${import.meta.env.BASE_URL}/gl/04-adaptabilidade/01-media-queries`}
   description="Como adaptarse a distintos dispositivos e tamaños de pantalla."
 />
 
     <LinkCard
       title="CSS moderno"
-      href="/gl/05-css-moderno/01-propiedades-personalizadas"
+      href={`${import.meta.env.BASE_URL}/gl/05-css-moderno/01-propiedades-personalizadas`}
       description="Como facer que CSS se adapte aos teus intereses."
     />
 
     <LinkCard
 
 title="CSS avanzado"
-href="/gl/06-avanzado/01-transicions-animacions"
+href={`${import.meta.env.BASE_URL}/gl/06-avanzado/01-transicions-animacions`}
 description="Técnicas avanzadas: animación, filtros, accesibilidade,... "
 />
 
     <LinkCard
       title="Anexos"
-      href="/gl/07-anexos/01-glosario-css"
+      href={`${import.meta.env.BASE_URL}/gl/07-anexos/01-glosario-css`}
       description="Outros temas de interese relacionados co uso de CSS."
     />
 
