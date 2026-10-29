@@ -81,4 +81,4 @@ Este proxecto está baixo a licenza MIT. Consulta o arquivo [LICENSE](LICENSE) p
 
 - [Documentación de Starlight](https://starlight.astro.build/)
 - [Documentación de Astro](https://docs.astro.build)
-- [Manual orixinal de CSS](../manual/)
+<!-- [Manual orixinal de CSS](../manual/) -->
